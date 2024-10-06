@@ -1,4 +1,4 @@
-# Stock Market Data Analysis
+Stock Market Data Analysis
 Overview
 This project focuses on the analysis of stock market data for Asian Paints and DMart. The primary goal is to create dynamic charts that visualize and compare stock performance over time. The data is extracted from Yahoo Finance using the Python library yfinance, and analysis is performed using both Python and Excel functions.
 
