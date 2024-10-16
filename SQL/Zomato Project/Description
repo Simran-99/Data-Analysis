@@ -1,0 +1,48 @@
+Zomato Data Analysis Project
+Project Overview
+This project involves analyzing a Zomato dataset that has been custom-created for the purpose of SQL query demonstrations and answering specific research questions. The dataset includes four tables representing Gold users, products, users, and sales data. The queries aim to explore customer behavior, purchase patterns, and membership impacts.
+
+Dataset Structure
+The dataset consists of the following tables:
+
+Gold Users Signup Table: Contains user IDs for customers with Gold memberships and the date of subscription.
+Columns: userid, gold_signup_date
+Product Table: Holds product information, including product ID, name, and price.
+Columns: product_id, product_name, price
+Users Table: Stores user IDs and their signup dates.
+Columns: userid, signup_date
+Sales Table: Records sales transactions, including user ID, product purchased, and order creation date.
+Columns: userid, product_id, created_date
+A script is included that generates this dataset, allowing for the execution of SQL queries aimed at answering various business and data exploration questions.
+
+Research Questions & Queries
+
+What is the total amount each customer spent on Zomato?
+
+How many days has each customer visited Zomato?
+
+What was the first product purchased by each customer?
+
+What is the most purchased item and how many times was it purchased by all customers?
+
+Which item was most popular for each customer?
+
+What item was first purchased by the customer after they became a member?
+
+Which item was purchased just before the customer became a member?
+
+What is the total number of orders and the amount spent by each member before they became a Gold member?
+
+How many points did each customer collect and for which product have the most points been given so far?
+
+Who earned more points in the first year after joining the Gold program and what was their earning?
+
+How are all customer transactions ranked?
+
+How are customer transactions ranked when they are a Gold member versus when they are not?
+
+
+
+
+
+
