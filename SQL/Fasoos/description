@@ -1,1 +1,74 @@
+Fassos Delivery Platform Data Analysis
+Overview
+This project involves creating and analyzing a database to track orders, drivers, ingredients, and customer behavior on the Fassos platform. The schema consists of six tables: driver, rolls, roll_recipes, ingredients, customer_orders, and driver_order. The database stores information about drivers, customer orders, the ingredients used in the rolls, and how drivers handle deliveries. Several SQL queries are used to analyze the data, provide insights, and answer specific business questions.
 
+Database Schema
+1. driver
+This table stores information about drivers who have joined the Fassos platform.
+
+driver_id: Unique identifier for each driver.
+reg_date: The date the driver registered with the platform.
+2. rolls
+This table holds the types of rolls offered by Fassos.
+
+roll_id: Unique identifier for each roll.
+roll_name: The type of roll (e.g., Non-Veg Roll, Veg Roll).
+3. roll_recipes
+This table stores the ingredients used in each type of roll.
+
+roll_id: Roll identifier linked to rolls table.
+ingredients: Comma-separated list of ingredient IDs used in the roll.
+4. ingredients
+This table contains all possible ingredients used in the rolls.
+
+ingredients_id: Unique identifier for each ingredient.
+ingredients_name: Name of the ingredient (e.g., Chicken, Cheese, BBQ Chicken).
+5. customer_orders
+This table stores customer orders along with details of any modifications to the rolls.
+
+order_id: Unique identifier for each order.
+customer_id: Identifier for the customer placing the order.
+roll_id: The roll ordered, linked to the rolls table.
+not_include_items: Ingredients removed from the roll.
+extra_items_included: Extra ingredients added to the roll.
+order_date: The date and time when the order was placed.
+6. driver_order
+This table tracks the details of the delivery process.
+
+order_id: Identifier for the order being delivered.
+driver_id: Identifier of the driver who handled the order.
+pickup_time: Time when the driver picked up the order.
+distance: Distance traveled by the driver.
+duration: Time taken to complete the delivery.
+cancellation: Whether the order was canceled and by whom (Driver/Customer).
+
+
+Research Questions
+The following research questions are explored in this project using SQL queries:
+
+How many rolls were ordered?
+How many unique customer orders were made?
+How many unique customers made orders?
+How many successful orders were delivered by each driver?
+How many of each type of roll was delivered?
+How many Veg and Non-Veg Rolls were ordered by each customer?
+What is the maximum number of rolls delivered in a single order?
+For all the rolls delivered, how many had at least one change, and how many had no changes at all?
+How many rolls were delivered that had both exclusions and extras?
+What were the total numbers of rolls ordered for each hour of the day?
+What was the number of orders for each day of the week?
+What was the average time in minutes it took for each driver to arrive at Fassos HQ to pick up the order?
+Is there a relationship between the number of rolls and how long the order takes to prepare?
+What was the average distance traveled for each customer?
+What is the difference between the longest and the shortest delivery time of all orders?
+What was the average speed of the driver?
+
+Usage
+Set up the database by running the provided SQL scripts to create and populate the tables.
+Use the provided queries to analyze the data and gain insights into customer preferences, delivery efficiency, and driver performance.
+Modify the queries as needed to answer additional business questions.
+Future Enhancements
+Advanced Analytics: Incorporating customer feedback data to analyze driver performance and customer satisfaction.
+Data Visualization: Building dashboards to visualize order trends, driver efficiency, and roll popularity using tools like Power BI or Tableau.
+Conclusion
+This project provides a detailed data model for tracking orders, ingredients, and delivery processes on the Fassos platform. Through SQL queries, valuable insights about customer behavior and operational efficiency are uncovered, which can be used to improve business decisions.
